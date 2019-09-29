@@ -33,3 +33,37 @@ First of all, you will have to import the following libraries.
   import pandas as pd
   import googlemaps
 ```
+If you are using Jupyter notebooks, you will need to install googlemaps with the following command
+
+```
+pip install -U googlemaps
+
+```
+
+The calling of the functions is easy, but you have to understand the structure of the request and read the documentation to know
+how to ask for the information that you want.
+
+I will show you, how to make a function to make a request
+
+```
+def callingFunction():
+  endpoint_url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?'
+  params = {
+    'key' : key,
+    'location' : location,
+    'radius' : radius,
+    'type' : type1
+  }
+
+  res = requests.get(endpoint_url, params= params)
+  results = res.content
+  return results
+
+
+```
+Markup : Our endoponit_url, is the variable where the link of the API will be located.
+            1. Check which is the link of the information that you want
+            2. You can skip this step putting the link insted of the variable in the request.get, 
+            but it is good manners to located in a variable
+
+
