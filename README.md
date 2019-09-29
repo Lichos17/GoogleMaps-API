@@ -8,7 +8,7 @@ https://cloud.google.com/maps-platform/?hl=es
 
 Then, click in the part where "console"
 
-![](images/you-picture.png)
+![](img/console.png)
 
 After that, you have to create a new project. I would highly recommend you to put a credit card to get 300 dlls that you will be able 
 to use during a year
