@@ -141,8 +141,7 @@ Remember that the easy part is the call of the function, but you have to read th
 Every API have a diferent link, diferent parameters, so, check it, and get all the information that you want
 
 
-
-
+#### Now, we have finished. I put a Jupyter Notebook where you can check more examples of how to use the Place Api!
 
 
 
