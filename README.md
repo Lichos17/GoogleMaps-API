@@ -33,12 +33,6 @@ First of all, you will have to import the following libraries.
   import pandas as pd
   import googlemaps
 ```
-If you are using Jupyter notebooks, you will need to install googlemaps with the following command
-
-```
-pip install -U googlemaps
-
-```
 
 The calling of the functions is easy, but you have to understand the structure of the request and read the documentation to know
 how to ask for the information that you want.
@@ -109,8 +103,45 @@ To put that information in a DataFrame, it is really easy and you will need only
 Pandas has a function to convert a json into a DataFrame. Remember that we are working with a dictionary, so check before where
 are the results in that dictionary, because, as you can see in the line above, we had to specify the ubication in the dictionary.
 
-##### Have you seen it? It is really easy, but remember! now all the API use the same link or the same parameters. The difficult
+##### Have you seen it? It is really easy, but remember! not all the API use the same link or the same parameters. The difficult
 ##### part is read the documentation, so, read it, and use the basis according to that information.
+
+
+### Wait! We haven't finished. All you have learned, have a other way to do it and it is with the library googlemaps.
+
+If you are using Jupyter notebooks, you will need to install googlemaps with the following command
+
+```
+pip install -U googlemaps
+
+```
+
+If you skip this part, you won't be able to use this library, so do it and check the next step.
+
+Once you have that library, you have to make a variable in order to locate your API key.
+
+```python
+  
+  gmaps = googlemaps.Client(key = 'Your API KEY')
+
+```
+
+Now, you can use all the function of the library. e.g:
+
+```
+  places = gmaps.places_nearby(location = '20.988459, -89.736768', radius = 2000, type = 'all', open_now = False)
+  UPY = pd.read_json(json.dumps(places['results']), orient = 'columns')
+
+```
+What do you think this function does? Exactly! the same as the function above, but now, you did not have to make a function.
+
+But, maybe you are saying, this is too easy, why you did a function above? 
+
+Remember that the easy part is the call of the function, but you have to read the documentation which is the difficult part.
+Every API have a diferent link, diferent parameters, so, check it, and get all the information that you want
+
+
+
 
 
 
