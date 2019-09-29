@@ -107,7 +107,7 @@ are the results in that dictionary, because, as you can see in the line above, w
 ##### part is read the documentation, so, read it, and use the basis according to that information.
 
 
-### Wait! We haven't finished. All you have learned, have a other way to do it and it is with the library googlemaps.
+## Wait! We haven't finished. All you have learned, have a other way to do it and it is with the library googlemaps.
 
 If you are using Jupyter notebooks, you will need to install googlemaps with the following command
 
