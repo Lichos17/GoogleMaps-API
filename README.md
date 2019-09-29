@@ -22,6 +22,14 @@ to use during a year
 instructor
 
 
+## Let's get into code
+
+First of all, you will have to import the following libraries. 
+
 ```python
-  print("HelloWorld")
+  import time
+  import json
+  import requests
+  import pandas as pd
+  import googlemaps
 ```
