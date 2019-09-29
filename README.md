@@ -61,7 +61,7 @@ def callingFunction():
 
 
 ```
-Markup : Our endoponit_url, is the variable where the link of the API will be located.
+Markup : 1. Our endoponit_url, is the variable where the link of the API will be located.
             1. Check which is the link of the information that you want
             2. You can skip this step putting the link insted of the variable in the request.get, 
             but it is good manners to located in a variable
